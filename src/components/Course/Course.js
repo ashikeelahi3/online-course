@@ -7,6 +7,7 @@ const Course = (props) => {
   const { courseImg, courseName, instructor, price } = props.course;
   const [btnText, setBtnText] = useState('Check out');
 
+  // a function for updating button's text
   const changeBtnText = () => (btnText === 'Check out') ? setBtnText('Cancel') : setBtnText('Check out');
   
   return (
@@ -16,7 +17,7 @@ const Course = (props) => {
       </div>
       <div>
         <h2>{courseName}</h2>
-        <p>{instructor}</p>
+        <p>Instructor: {instructor}</p>
         <p><small>${price}</small></p>
       </div>
       <div

@@ -8,10 +8,13 @@ function App() {
   const [courses, setCourses] = useState([]);
   const [cart, setCart] = useState([]);
 
+
+  // getting data from json file
   useEffect(() => {
     setCourses(Data);
   });
 
+  // add data in a cart. It used in course.js file
   const addToCart = addedCourse => {
 
     if (cart.indexOf(addedCourse) === -1) {
