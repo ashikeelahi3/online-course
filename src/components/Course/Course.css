@@ -1,0 +1,10 @@
+
+.Course{
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.img{
+  height: 150px;
+  max-width: 80%;
+}
